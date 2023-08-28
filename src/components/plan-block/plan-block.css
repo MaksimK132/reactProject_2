@@ -1,0 +1,241 @@
+@import "./../../styles/reset.css";
+
+/* Plan block */
+.plan-grid
+{
+    
+    display: grid;
+    grid-template-columns: 720px 719px;
+    grid-template-rows: 1860px;
+    grid-template-areas: "plan-info plan-big-image";
+}
+.plan-info{grid-area: plan-info;}
+.plan-image{grid-area: plan-big-image;}
+
+.plan-demo
+{
+    border-right: 1px solid var(--black, #121212);
+    border-bottom: 1px solid var(--black, #121212);
+}
+.plan-demo-right
+{
+    border-bottom: 1px solid var(--black, #121212);
+}
+
+.plan-container 
+{
+    max-width: 639px;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+
+.build-tittle
+{
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+}
+.select-tittle
+{
+    font-size: 38px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+.select-text
+{
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 625px;
+    margin-bottom: 24px;
+}
+.select-line
+{
+    width: 640px;
+    height: 1px;
+    background: #D2D2D7;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.often-tittle
+{
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+.frequency-tittle
+{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+.frequency-buttons
+{
+    display: flex;
+    gap: 16px;
+}
+.frequency-button
+{
+    display: flex;
+    height: 56px;
+    padding: 16px 24px 14px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid var(--black, #121212);
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.how-many-tittle
+{
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+.how-many-text
+{
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 625px;
+    margin-bottom: 24px;
+}
+.checkout-button
+{
+    display: flex;
+    height: 56px;
+    padding: 16px 24px 14px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    background: var(--black, #121212);
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFF;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+/* Plan block */
+.plan-blocks-list
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+.plan-blocks-item
+{
+    border: 1px solid var(--light-gray, #D2D2D7);
+}
+.plan-top-block
+{
+    display: flex;
+}
+.plan-name
+{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+.plan-description
+{
+    padding: 16px;
+    border-left: 1px solid var(--light-gray, #D2D2D7);
+}
+.plan-condition-list
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+}
+.plan-condition-item
+{
+    display: flex;
+    align-items: center;
+}
+.plan-dot 
+{
+    width: 4px;
+	height: 4px;
+	background: #121212;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+.plan-button
+{
+    display: flex;
+    height: 56px;
+    padding: 16px 24px 14px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    align-self: stretch;
+    background: var(--black, #121212);
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #FFF;
+    width: 100%;
+}
+
+@media(max-width: 1440px)
+{
+    .plan-grid
+    {
+        
+        display: grid;
+        grid-template-columns: 719px;
+        grid-template-rows:  720px 1860px;
+        grid-template-areas:"plan-image"
+                            "plan-info";
+                             
+    }
+}
+
+@media(max-width: 720px)
+{
+    .plan-grid
+    {
+        
+        display: grid;
+        grid-template-columns: 359px;
+        grid-template-rows:  360px 2600px;
+        grid-template-areas:"plan-image"
+                            "plan-info";                   
+    }
+    .plan-top-block
+    {
+        flex-direction: column;
+    }
+    .plan-image
+    {
+        width: 280px;
+        border: 1px solid var(--light-gray, #D2D2D7);
+        margin-left: 10px;
+    }
+    .plan-description
+    {
+        border-left: none;
+    }
+    .plan-blocks-item
+    {
+        border: none;
+    }
+    .plan-container
+    {
+        max-width: 300px;
+    }
+    .select-line
+    {
+        width: 300px;
+    }
+    .frequency-buttons
+    {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,13 @@
+@import "./../../styles/reset.css";
+
+.socials-block
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.socials-list
+{
+    display: flex;
+    gap: 32px;
+}

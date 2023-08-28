@@ -1,0 +1,146 @@
+@import "./../../styles/reset.css";
+
+/* FAQ block */
+.faq-grid
+{
+    display: grid;
+    grid-template-columns: 1440px;
+    grid-template-rows: 994px;
+    grid-template-areas: "faq-info";
+}
+.faq-info{grid-area: faq-info;}
+
+.faq-demo
+{
+    border-bottom: 1px solid var(--black, #121212);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq-block
+{
+    background: #F5F5F7;
+}
+.faq-square
+{
+    border: 1px solid var(--black, #121212);
+    background: var(--white, #FFF); 
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 864px;
+    height: 834px;  
+}
+.faq-tittle
+{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 64px;
+}
+.faq-first-top
+{
+    display: flex;
+    justify-content: space-between;
+}
+.list-first-tittle
+{
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+.faq-first-list-text
+{
+    max-width: 704px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.faq-top
+{
+    display: flex;
+    justify-content: space-between;
+}
+.faq-list-line
+{
+    width: 704px;
+    height: 1px;
+    background-color: #121212;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.list-tittle
+{
+    font-size: 28px;
+    font-weight: 400;
+}
+.faq-up-arrow
+{
+    width: 24px;
+    height: 24px;
+}
+.faq-down-arrow
+{
+    width: 24px;
+    height: 24px;
+}
+
+@media(max-width: 1440px)
+{
+    .faq-grid
+    {
+        display: grid;
+        grid-template-columns: 719px;
+        grid-template-rows: 994px;
+        grid-template-areas: "faq-info";
+    }
+    .faq-square
+    {
+        width: 600px;
+    }
+    .faq-list-line
+    {
+        width: 550px;
+    }
+    .list-tittle
+    {
+        font-size: 27px;
+    }
+}
+
+@media(max-width: 720px)
+{
+    .faq-grid
+    {
+        display: grid;
+        grid-template-columns: 359px;
+        grid-template-rows: 1400px;
+        grid-template-areas: "faq-info";
+    }
+    .faq-square
+    {
+        width: 300px;
+        height: 1300px;
+    }
+    .faq-list-line
+    {
+        width: 250px;
+    }
+    .list-tittle
+    {
+        font-size: 27px;
+    }
+    .faq-down-arrow
+    {
+        margin-top: 35px;
+    }
+    .faq-up-arrow
+    {
+        margin-top: 35px;
+    }
+    .faq-tittle
+    {
+        font-size: 43px;
+    }
+}

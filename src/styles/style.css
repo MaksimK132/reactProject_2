@@ -1,0 +1,64 @@
+@import "./reset.css";
+
+/* All document */
+body
+{
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-family: 'Gilroy-Heavy', sans-serif;
+    font-family: 'Gilroy-Light', sans-serif;
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-family: 'Gilroy-Regular', sans-serif;
+
+}
+.container
+{
+    max-width: 1440px;
+    margin: 0 auto;
+    border: 1px solid var(--black, #121212);
+}
+
+@media (max-width: 1440px)
+{
+    .container{
+        max-width: 720px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 720px)
+{
+    .container{
+        max-width: 360px;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,97 @@
+@import "./../../styles/reset.css";
+
+/* Our qualities block */
+.our-qualities-grid
+{
+    display: grid;
+    grid-template-columns: 720px 719px;
+    grid-template-rows: 720px 720px 720px;
+    grid-template-areas: 
+        "quality-picture-1 quality-inner-1"
+        "quality-inner-2 quality-picture-2"
+        "quality-picture-3 quality-inner-3";
+}
+.quality-picture-1{grid-area: quality-picture-1;}
+.quality-picture-2{grid-area: quality-picture-2;}
+.quality-picture-3{grid-area: quality-picture-3;}
+.quality-inner-1{grid-area: quality-inner-1;}
+.quality-inner-2{grid-area: quality-inner-2;}
+.quality-inner-3{grid-area: quality-inner-3;}
+
+.our-qualities-demo
+{
+    border-right: 1px solid var(--black, #121212);
+    border-bottom: 1px solid var(--black, #121212);
+}
+.our-qualities-demo-right
+{
+    border-bottom: 1px solid var(--black, #121212);
+}
+
+
+.quality-tittle
+{
+    font-size: 38px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+.qulity-text    
+{
+    max-width: 560px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.quality-inner-1
+{
+    padding: 80px;
+}
+.quality-inner-2
+{
+    padding: 80px;
+}
+.quality-inner-3
+{
+    padding: 80px;
+}
+
+@media(max-width: 1440px)
+{
+    .our-qualities-grid
+    {
+        display: grid;
+        grid-template-columns: 719px;
+        grid-template-rows: 720px 332px 720px 332px 720px 332px;
+        grid-template-areas: 
+            "quality-picture-1"
+            "quality-inner-1"
+            "quality-picture-2"
+            "quality-inner-2"
+            "quality-picture-3"
+            "quality-inner-3";
+    }
+    .border
+    {
+        border-right: none;
+    }
+}
+
+@media(max-width: 720px)
+{
+    .our-qualities-grid
+    {
+        display: grid;
+        grid-template-columns: 359px;
+        grid-template-rows: 360px 600px 360px 600px 360px 700px;
+        grid-template-areas: 
+            "quality-picture-1"
+            "quality-inner-1"
+            "quality-picture-2"
+            "quality-inner-2"
+            "quality-picture-3"
+            "quality-inner-3";
+    }
+    .border-2
+    {
+        border-right: none;
+    }
+}

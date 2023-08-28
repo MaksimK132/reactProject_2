@@ -1,0 +1,104 @@
+@import "./../../styles/reset.css";
+
+ /* About us block */
+ .about-us-grid
+ {
+     display: grid;
+     grid-template-columns: 720px 719px;
+     grid-template-rows: 581px;
+     grid-template-areas:
+         "about-left about-right";
+ }
+ .about-block-left{grid-area: about-left;}
+ .about-block-right{grid-area: about-right;}
+ 
+ .about-us-demo
+ {
+     border-right: 1px solid var(--black, #121212);
+     border-bottom: 1px solid var(--black, #121212);
+ }
+ .about-us-demo-right
+ {
+     border-bottom: 1px solid var(--black, #121212);
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: flex-start;
+     padding: 80px;
+ }
+ 
+ .about-us-tittle
+ {
+     font-size: 50px;
+     font-weight: 600;
+     color: #121212;
+     margin-top: 80px;
+     margin-left: 80px;
+ }
+ .our-story
+ {
+     font-size: 14px;
+     font-weight: 500;
+     color: #121212;
+     margin-bottom: 24px;
+ }
+ .about-right-tittle
+ {
+     font-size: 38px;
+     font-weight: 500;
+ }
+ .about-right-text
+ {
+     max-width: 544px;
+     font-size: 16px;
+     font-weight: 400;
+     margin-top: 16px;
+ }
+ .about-right-button
+ {
+     font-size: 16px;
+     font-weight: 500;
+     border: 1px solid var(--black, #121212);
+     padding: 16px 24px 14px 24px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 175px;
+     height: 56px;
+     margin-top: 64px;
+ }
+ .to-about-button
+ {
+    color: #121212;
+    list-style: none;
+ }
+
+ @media(max-width: 1440px)
+ {
+    .about-us-grid
+    {
+        display: grid;
+        grid-template-columns: 719px;
+        grid-template-rows: 220px 581px;
+        grid-template-areas:
+            "about-left about-left"
+            "about-right about-right";
+    }
+    .border
+    {
+        border-right: none;
+    }
+ }
+
+ @media(max-width: 720px)
+ {
+    .about-us-grid
+    {
+        display: grid;
+        grid-template-columns: 359px;
+        grid-template-rows: 220px 1000px;
+        grid-template-areas:
+            "about-left "
+            "about-right";
+    }
+ }

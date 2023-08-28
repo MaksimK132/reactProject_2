@@ -1,0 +1,79 @@
+@import "./../../styles/reset.css";
+
+/* Discover block */
+.discover-grid
+{
+    display: grid;
+    grid-template-columns: 1440px;
+    grid-template-rows: 398px;
+    grid-template-areas: "discover-inner";
+}
+
+.discover-inner{grid-area: discover-inner;}
+
+.discover-demo
+{
+    border-bottom: 1px solid var(--black, #121212);
+}
+
+.discover-inner
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.discover-tittle
+{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.discover-text
+{
+    max-width: 638px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 56px;
+}
+.discover-button
+{
+    display: flex;
+    height: 56px;
+    padding: 16px 24px 14px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background: var(--black, #121212);
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+@media(max-width: 1440px)
+{
+    .discover-grid
+    {
+        display: grid;
+        grid-template-columns: 719px;
+        grid-template-rows: 500px;
+        grid-template-areas: "discover-inner";
+    }
+}
+
+@media(max-width: 720px)
+{
+    .discover-grid
+    {
+        display: grid;
+        grid-template-columns: 359px;
+        grid-template-rows: 500px;
+        grid-template-areas: "discover-inner";
+    }
+    .discover-text
+    {
+        max-width: 280px;
+    }
+}

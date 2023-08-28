@@ -1,0 +1,66 @@
+@import "./../../styles/reset.css";
+
+/* Our service block */
+.our-service-grid
+{
+    display: grid;
+    grid-template-columns: 719px 719px;
+    grid-template-rows: 220px 720px 720px 720px;
+    grid-template-areas: 
+        "our-service-tittle our-service-tittle"
+        "our-service-image-1 our-service-subscribe"
+        "our-service-image-2 our-service-image-2"
+        "clients-say clients-say";
+}
+.our-service-tittle{grid-area: our-service-tittle;}
+.our-service-image-1{grid-area: our-service-image-1;}
+.our-service-image-2{grid-area: our-service-image-2;}
+.our-service-subscribe{grid-area: our-service-subscribe;}
+.clients-say{grid-area: clients-say;}
+
+.our-service-demo
+{
+    border-right: 1px solid var(--black, #121212);
+    border-bottom: 1px solid var(--black, #121212);
+}
+.our-service-demo-right
+{
+    border-bottom: 1px solid var(--black, #121212);
+}
+
+@media(max-width: 1440px)
+{
+    .our-service-grid
+    {
+        display: grid;
+        grid-template-columns: 719px;
+        grid-template-rows: 220px 719px 500px 500px 614px;
+        grid-template-areas: 
+            "our-service-tittle"
+            "our-service-image-1"
+            "our-service-subscribe"
+            "our-service-image-2"
+            "clients-say";
+    }
+}
+@media(max-width: 720px)
+{
+    .our-service-grid
+    {
+        display: grid;
+        grid-template-columns: 359px;
+        grid-template-rows: 220px 360px 500px 500px 614px;
+        grid-template-areas: 
+            "our-service-tittle"
+            "our-service-image-1"
+            "our-service-subscribe"
+            "our-service-image-2"
+            "clients-say";
+    }
+}
+
+
+
+
+
+

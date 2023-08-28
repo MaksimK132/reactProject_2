@@ -1,0 +1,20 @@
+@import "./../../styles/reset.css";
+
+/* Contact us block */
+.contact-us-block
+{
+    display: flex;
+    
+}
+
+@media(max-width: 1440px)
+{
+    .contact-us-block
+    {
+        flex-direction: column;
+        
+    }
+}
+
+
+

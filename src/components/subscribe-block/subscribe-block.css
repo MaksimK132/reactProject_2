@@ -1,0 +1,75 @@
+@import "./../../styles/reset.css";
+
+.our-service-subscribe
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.our-service-tittle
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service-tittle-text
+{
+    font-size: 50px;
+    font-weight: 600;
+}
+.subscribe-tittle
+{
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+.subscribe-big-tittle
+{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.subscribe-text
+{
+    font-size: 18px;
+    font-weight: 500;
+    max-width: 560px;
+    margin-bottom: 64px;
+}
+.subscribe-button
+{
+    display: flex;
+    height: 56px;
+    padding: 16px 24px 14px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: 1px solid var(--black, #121212);
+}
+.to-subscription-button
+{
+    color: #121212;
+    list-style: none;
+}
+
+@media(max-width: 1440px)
+{
+    .border
+    {
+        border-right: none;
+    }
+}
+
+@media(max-width: 720px)
+{
+    .subscribe-text
+    {
+        max-width: 280px;
+    }
+}

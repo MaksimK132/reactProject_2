@@ -1,0 +1,37 @@
+@import "./../../styles/reset.css";
+
+/* Product card */
+
+.product-card-inner
+{
+    padding: 40px;
+}
+.product-info
+{
+    display: flex;
+    margin-bottom: 24px;
+}
+.product-category
+{
+    font-size: 14px;
+    font-weight: 500;
+}
+.product-card-name
+{
+    font-size: 14px;
+    font-weight: 500;
+    color: #808080;
+}
+.product-name-price
+{
+    font-size: 38px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+.product-text
+{
+    max-width: 640px;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 24px;
+}

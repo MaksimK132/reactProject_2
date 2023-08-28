@@ -1,0 +1,178 @@
+@import "./../../styles/reset.css";
+
+/* Contact us left block */
+.left-column-grid
+{
+    display: grid;
+    grid-template-columns: 360px 360px;
+    grid-template-rows: 360px 78px 282px;
+    grid-template-areas:
+        "book-call book-call"
+        "phone-tittle address-tittle"
+        "phone-inner address-inner";
+}
+.book-call{grid-area: book-call;}
+.phone-tittle{grid-area: phone-tittle;}
+.address-tittle{grid-area: address-tittle;}
+.phone-inner{grid-area: phone-inner;}
+.address-inner{grid-area: address-inner;}
+
+.left-column-demo
+{
+    border-right: 1px solid var(--black, #121212);
+    border-bottom: 1px solid var(--black, #121212);
+}
+
+.book-call
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 80px;
+}
+.book-tittle
+{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+.book-text
+{
+    font-size: 18px;
+    font-weight: 500;
+}
+.input-form
+{
+    display: flex;
+    height: 56px;
+    padding: 16px;
+    align-items: center;
+    align-self: stretch;
+    border: 1px solid var(--light-gray, #D2D2D7);
+    background: var(--white, #FFF);
+}
+.book-call-button
+{
+    display: flex;
+    height: 56px;
+    padding: 16px 24px 14px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background: var(--black, #121212);
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFF;
+    text-transform: uppercase;
+}
+.input-inner
+{
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+}
+.phone-tittle
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.phone-tittle-text
+{
+    font-size: 38px;
+    font-weight: 500;
+}
+.address-tittle
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.address-tittle-text
+{
+    font-size: 38px;
+    font-weight: 500;
+}
+.phone-inner
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+.phone-block
+{
+    display: flex;
+    gap: 4px;
+}
+.phone-number
+{
+    font-size: 16px;
+    font-weight: 600;
+}
+.address-inner
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 22px;
+    justify-content: center;
+    align-items: center;
+}
+.location-info
+{
+    display: flex;
+    gap: 4px;
+}
+.oppening-hours
+{
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.location-info-text
+{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+@media(max-width: 1440px)
+{
+    .left-column-grid
+    {
+        display: grid;
+        grid-template-columns: 360px 359px;
+    }
+    .border
+    {
+        border-right: none;
+    }
+}
+
+@media(max-width: 720px)
+{
+    .left-column-grid
+    {
+        display: grid;
+        grid-template-columns: 359px;
+        grid-template-rows: 400px 78px 282px 78px 282px;
+        grid-template-areas:
+            "book-call"
+            "phone-tittle"
+            "phone-inner"
+            "address-tittle"
+            "address-inner";
+    }
+    .input-inner
+    {
+        flex-direction: column;
+    }
+    .book-tittle
+    {
+        font-size: 40px;
+    }
+    .border-2
+    {
+        border-right: none;
+    }
+}

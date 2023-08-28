@@ -1,0 +1,35 @@
+@import "./../../styles/reset.css";
+
+/* Home product squares */
+.product-inner
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 109px;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 25px;
+}
+.shop-now
+{
+    display: flex;
+    gap: 4px;
+}
+.shop-now-reverse
+{
+    display: flex;
+    gap: 4px;
+    flex-direction: row-reverse;
+}
+.product-name
+{
+    font-size: 38px;
+    font-weight: 500;
+    color: #121212;
+}
+.shop-now-text
+{
+    font-size: 16px;
+    font-weight: 600;
+    color: #121212;
+}

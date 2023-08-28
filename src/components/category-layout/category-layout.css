@@ -1,0 +1,110 @@
+@import "./../../styles/reset.css";
+
+/* Category block */
+.category-grid
+{
+    display: grid;
+    grid-template-columns: 360px 360px 360px 359px;
+    grid-template-rows: 360px 360px 360px 360px 360px;
+    grid-template-areas:
+        "hero-image hero-image  product-1  product-2"
+        "hero-image hero-image  product-3  product-4"
+        "category-null category-null  product-5  product-6"
+        "category-null category-null  product-7  product-8"
+        "category-null category-null  product-9  product-10"
+}
+.hero-image{grid-area: hero-image;}
+.product-1{grid-area: product-1;}
+.product-2{grid-area: product-2;}
+.product-3{grid-area: product-3;}
+.product-4{grid-area: product-4;}
+.product-5{grid-area: product-5;}
+.product-6{grid-area: product-6;}
+.product-7{grid-area: product-7;}
+.product-8{grid-area: product-8;}
+.product-9{grid-area: product-9;}
+.product-10{grid-area: product-10;}
+.category-null{grid-area: category-null;}
+
+.category-demo
+{
+    border-right: 1px solid var(--black, #121212);
+    border-bottom: 1px solid var(--black, #121212);
+}
+.category-demo-right
+{
+    border-bottom: 1px solid var(--black, #121212);
+}
+
+.hero-image
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.category-hero-tittle
+{
+    font-size: 67px;
+    font-weight: 600;
+    color: #FFF;
+}
+.category-product-name
+{
+    font-size: 16px;
+    font-weight: 500;
+}
+.category-product-price
+{
+    font-size: 14px;
+    font-weight: 500;
+    color: #808080;
+}
+.category-product-content
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 24px;
+}
+
+@media(max-width: 1440px)
+{
+    .category-grid
+    {
+        display: grid;
+        grid-template-columns: 360px 359px;
+        grid-template-rows: 360px 360px 360px 360px 360px 360px 360px;
+        grid-template-areas:
+            "hero-image hero-image"
+            "hero-image hero-image"
+            "product-1  product-2"
+            "product-3  product-4"
+            "product-5  product-6"
+            "product-7  product-8"
+            "product-9  product-10"
+    }
+}
+
+@media(max-width: 720px)
+{
+    .category-grid
+    {
+        display: grid;
+        grid-template-columns: 359px;
+        grid-template-rows: 360px 360px 360px 360px 360px 360px 360px 360px 360px 360px 360px;
+        grid-template-areas:
+            "hero-image"
+            "product-1"  
+            "product-2"
+            "product-3"  
+            "product-4"
+            "product-5"  
+            "product-6"
+            "product-7"  
+            "product-8"
+            "product-9"  
+            "product-10"
+    }
+}

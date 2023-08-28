@@ -1,0 +1,62 @@
+@import "./../../styles/reset.css";
+
+.our-service-image-2
+{
+    background-image: url(./../../img/service-image-2.png);
+}
+
+
+.our-service-image-2
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.wedding-tittle
+{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 24px;
+    color: #FFF;
+}
+.wedding-big-tittle
+{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #FFF;
+}
+.wedding-text
+{
+    max-width: 586px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 64px;
+    color: #FFF;
+}
+.wedding-button
+{
+    display: flex;
+    width: 175px;
+    height: 56px;
+    padding: 16px 24px 14px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid var(--white, #FFF);
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+@media(max-width: 720px)
+{
+    .wedding-text
+    {
+        max-width: 280px;
+    }
+}

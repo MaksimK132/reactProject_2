@@ -1,0 +1,27 @@
+@import "./../../styles/reset.css";
+
+/* Also block */
+.also-grid
+{
+    display: grid;
+    grid-template-columns: 360px 360px 360px 359px;
+    grid-template-rows: 206px 360px;
+    grid-template-areas: 
+        "also-tittle also-tittle also-tittle also-tittle"
+        "also-product-1 also-product-2 also-product-3 also-product-4";
+}
+.also-tittle{grid-area: also-tittle;}
+.also-product-1{grid-area: also-product-1;}
+.also-product-2{grid-area: also-product-2;}
+.also-product-3{grid-area: also-product-3;}
+.also-product-4{grid-area: also-product-4;}
+
+.also-demo
+{
+    border-right: 1px solid var(--black, #121212);
+    border-bottom: 1px solid var(--black, #121212);
+}
+.also-demo-right
+{
+    border-bottom: 1px solid var(--black, #121212);
+}

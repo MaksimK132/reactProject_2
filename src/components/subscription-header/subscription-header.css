@@ -1,0 +1,114 @@
+@import "./../../styles/reset.css";
+
+/* Subscription header */
+
+.subscription-header-grid
+{
+    display: grid;
+    grid-template-columns: 720px 719px;
+    grid-template-rows: 720px;
+    grid-template-areas: "subscription-hero-image subscription-info";
+}
+.subscription-hero-image{grid-area: subscription-hero-image;}
+.subscription-info{grid-area: subscription-info;}
+
+.subscription-header-demo
+{
+    border-right: 1px solid var(--black, #121212);
+    border-bottom: 1px solid var(--black, #121212);
+}
+.subscription-header-demo-right
+{
+    border-bottom: 1px solid var(--black, #121212);
+}
+.subscription-info
+{
+    padding: 80px;
+}
+.flower-subscription-tittle
+{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+.flower-subscription-list
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+.flower-subscription-item
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+.subscription-tittle
+{
+    font-size: 16px;
+    font-weight: 500;
+}
+.flower-subscription-text
+{
+    max-width: 560px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.subscription-dot
+{
+    width: 4px;
+	height: 4px;
+	background: #121212;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+.flower-subscription-text-block
+{
+    display: flex;
+}
+.flower-subscription-button
+{
+    display: flex;
+    height: 56px;
+    padding: 16px 24px 14px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: 1px solid var(--black, #121212);
+    margin-top: 71px;    
+}
+
+@media(max-width: 1440px)
+{
+    .subscription-header-grid
+    {
+        display: grid;
+        grid-template-columns: 719px;
+        grid-template-rows: 720px 720px;
+        grid-template-areas: "subscription-hero-image"
+                             "subscription-info";
+    }
+}
+
+@media(max-width: 720px)
+{
+    .subscription-header-grid
+    {
+        display: grid;
+        grid-template-columns: 359px;
+        grid-template-rows: 360px 1150px;
+        grid-template-areas: "subscription-hero-image"
+                             "subscription-info";
+    }
+    .flower-subscription-tittle
+    {
+        font-size: 38px;
+    }
+}
