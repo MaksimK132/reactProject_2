@@ -39,6 +39,14 @@
 {
     cursor: pointer;
 }
+.menu-nav-link
+{
+    cursor: pointer;
+}
+.cart-image-link
+{
+    cursor: pointer;
+}
 .menu-image
 {
     display: none;
